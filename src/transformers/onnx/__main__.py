@@ -22,6 +22,7 @@ from transformers.models.bart import BartOnnxConfig
 from transformers.models.bert import BertOnnxConfig
 from transformers.models.distilbert import DistilBertOnnxConfig
 from transformers.models.gpt2 import GPT2OnnxConfig
+from transformers.models.gpt_neo import GPTNeoOnnxConfig
 from transformers.models.longformer import LongformerOnnxConfig
 from transformers.models.roberta import RobertaOnnxConfig
 from transformers.models.t5 import T5OnnxConfig
@@ -47,6 +48,7 @@ SUPPORTED_MODEL_KIND = {
     "bert": {"default": BertOnnxConfig.default},
     "distilbert": {"default": DistilBertOnnxConfig.default},
     "gpt2": {"default": GPT2OnnxConfig.default},
+    "gpt_neo": {"default": GPTNeoOnnxConfig.default},
     "longformer": {"default": LongformerOnnxConfig.default},
     "roberta": {"default": RobertaOnnxConfig},
     "t5": {"default": T5OnnxConfig.default},
